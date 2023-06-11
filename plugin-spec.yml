@@ -1,0 +1,45 @@
+id: xxx
+name: xxx
+names:
+  ZH_CN: 模版仓库
+  ZH_TW: 模版倉庫
+entry: ./xxx.jar
+version: 1.0.0
+logo: ./logos/xxx.png
+homepage: https://xxx.xxx/xxx
+compatible-version:
+  since-build: 0
+  until-build: 2147483647
+description-filename: description.md
+owner:
+  name: xxx
+  email: xxx@xxx.xxx
+  homepage: https://xxx.xxx/xxx
+categories:
+  - THEME
+  - PRODUCTIVITY
+  - LANGUAGE
+  - DEVELOP_TOOL
+  - MEDIA
+  - SECURITY
+  - SEARCHING
+  - GAME
+  - NEWS
+  - ENTERTAINMENT
+  - ACTION_WINDOW
+  - PLUGIN_SUPPORT
+platforms:
+  - WINDOWS
+  - MACOS
+  - LINUX
+languages:
+  - EN_US
+  - ZH_CN
+  - ZH_TW
+language-bundle-name: com.example.kotlin.LanguageBundle
+actions:
+  - keywords:
+      - xxx
+    logo: ./logos/xxx.png
+    handler-class-name: xxx
+    description-bundle-id: xxx
