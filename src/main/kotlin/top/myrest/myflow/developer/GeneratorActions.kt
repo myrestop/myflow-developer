@@ -9,7 +9,7 @@ import top.myrest.myflow.action.basicCopyResult
 import top.myrest.myflow.enumeration.ActionArgMode
 
 class UuidGeneratorActionHandler : BaseUuidGeneratorActionHandler("uuid", false)
-class Uuid0GeneratorActionHandler : BaseUuidGeneratorActionHandler("simple-uuid", true)
+class Uuid0GeneratorActionHandler : BaseUuidGeneratorActionHandler("uuid.simple", true)
 open class BaseUuidGeneratorActionHandler(private val actionId: String, private val simple: Boolean) : ActionRequireArgHandler() {
     override val argRequireMode = ActionArgMode.emptyArgMode
     override fun queryArgAction(param: ActionParam): List<ActionResult> {

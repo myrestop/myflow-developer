@@ -15,7 +15,7 @@ class Base32DigestActionHandler : BaseDigestActionHandler() {
 }
 
 class Base32DecodeActionHandler : BaseDigestActionHandler() {
-    override fun queryDigestAction(content: String) = basicCopyResult(actionId = "debase32", logo = "./logos/base32.png", result = Base32.decodeStr(content).asSuggestionResult())
+    override fun queryDigestAction(content: String) = basicCopyResult(actionId = "base32.decode", logo = "./logos/base32.png", result = Base32.decodeStr(content).asSuggestionResult())
 }
 
 class Base64DigestActionHandler : BaseDigestActionHandler() {
@@ -29,7 +29,7 @@ class Base64UrlDigestActionHandler : BaseDigestActionHandler() {
 }
 
 class Base64DecodeActionHandler : BaseDigestActionHandler() {
-    override fun queryDigestAction(content: String) = basicCopyResult(actionId = "debase64", logo = "./logos/base64.png", result = Base64.decodeStr(content).asSuggestionResult())
+    override fun queryDigestAction(content: String) = basicCopyResult(actionId = "base64.decode", logo = "./logos/base64.png", result = Base64.decodeStr(content).asSuggestionResult())
 }
 
 class String2UnicodeActionHandler : BaseDigestActionHandler() {
@@ -45,7 +45,7 @@ class HexDigestActionHandler : BaseDigestActionHandler() {
 }
 
 class HexDecodeActionHandler : BaseDigestActionHandler() {
-    override fun queryDigestAction(content: String) = basicCopyResult(actionId = "dehex", logo = "./logos/hex.png", result = HexUtil.decodeHexStr(content).asSuggestionResult())
+    override fun queryDigestAction(content: String) = basicCopyResult(actionId = "hex.decode", logo = "./logos/hex.png", result = HexUtil.decodeHexStr(content).asSuggestionResult())
 }
 
 class LowerCaseActionHandler : BaseDigestActionHandler() {

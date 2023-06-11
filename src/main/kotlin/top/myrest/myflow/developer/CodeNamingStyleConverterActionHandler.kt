@@ -51,7 +51,7 @@ class CodeNamingStyleConverterActionHandler : ActionRequireArgHandler() {
     private fun packResult(value: String, results: List<String>): List<ActionResult> {
         return if (results.isEmpty()) emptyList() else listOf(
             RefreshableActionResult(
-                actionId = "style.naming.code",
+                actionId = "style.code.naming",
                 score = min(100, 60 + 2 * value.length),
                 value = results,
                 refreshResult = { s, cnt ->
