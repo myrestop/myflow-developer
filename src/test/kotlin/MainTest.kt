@@ -9,5 +9,5 @@ fun main() {
     DevProps.disableNativeListener = false
     AppInfo.actionWindow.isUndecorated = false
     FlowApp().configApp()
-    App(AppInfo.appName + "Xxx")
+    App(AppInfo.appName + "Developer")
 }

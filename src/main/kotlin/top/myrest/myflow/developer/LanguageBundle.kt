@@ -1,4 +1,4 @@
-package com.example.kotlin
+package top.myrest.myflow.developer
 
 class LanguageBundle {
 
