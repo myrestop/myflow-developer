@@ -1,1 +1,1 @@
-rootProject.name = "myflow-plugin-gradle-template"
+rootProject.name = "myflow-developer"
