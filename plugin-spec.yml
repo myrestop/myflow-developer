@@ -31,94 +31,94 @@ actions:
   - logo: ./logos/code_naming.png
     keywords:
       - '*'
-    handler-class-name: top.myrest.myflow.developer.CodeNamingStyleConverterActionHandler
+    handler: top.myrest.myflow.developer.CodeNamingStyleConverterActionHandler
     description-bundle-id: desc.naming-style-converter
   - keywords:
       - '*'
-    handler-class-name: top.myrest.myflow.developer.ColorActionHandler
+    handler: top.myrest.myflow.developer.ColorActionHandler
     description-bundle-id: desc.color
   - logo: ./logos/base32.png
     keywords:
       - base32
-    handler-class-name: top.myrest.myflow.developer.Base32DigestActionHandler
+    handler: top.myrest.myflow.developer.Base32DigestActionHandler
     description-bundle-id: desc.base32
   - logo: ./logos/base32.png
     keywords:
       - base32decode
-    handler-class-name: top.myrest.myflow.developer.Base32DecodeActionHandler
+    handler: top.myrest.myflow.developer.Base32DecodeActionHandler
     description-bundle-id: desc.decode-base32
   - logo: ./logos/base64.png
     keywords:
       - base64
-    handler-class-name: top.myrest.myflow.developer.Base64DigestActionHandler
+    handler: top.myrest.myflow.developer.Base64DigestActionHandler
     description-bundle-id: desc.base64
   - logo: ./logos/base64.png
     keywords:
       - base64decode
-    handler-class-name: top.myrest.myflow.developer.Base64DecodeActionHandler
+    handler: top.myrest.myflow.developer.Base64DecodeActionHandler
     description-bundle-id: desc.decode-base64
   - logo: ./logos/base64.png
     keywords:
       - base64url
-    handler-class-name: top.myrest.myflow.developer.Base64UrlDigestActionHandler
+    handler: top.myrest.myflow.developer.Base64UrlDigestActionHandler
     description-bundle-id: desc.base64url
   - logo: ./logos/unicode.png
     keywords:
       - unicode
-    handler-class-name: top.myrest.myflow.developer.String2UnicodeActionHandler
+    handler: top.myrest.myflow.developer.String2UnicodeActionHandler
     description-bundle-id: desc.str2unicode
   - logo: ./logos/unicode.png
     keywords:
       - unicode2string
-    handler-class-name: top.myrest.myflow.developer.Unicode2StringActionHandler
+    handler: top.myrest.myflow.developer.Unicode2StringActionHandler
     description-bundle-id: desc.unicode2str
   - logo: ./logos/hex.png
     keywords:
       - hex
-    handler-class-name: top.myrest.myflow.developer.HexDigestActionHandler
+    handler: top.myrest.myflow.developer.HexDigestActionHandler
     description-bundle-id: desc.hex
   - logo: ./logos/hex.png
     keywords:
       - hexdecode
-    handler-class-name: top.myrest.myflow.developer.HexDecodeActionHandler
+    handler: top.myrest.myflow.developer.HexDecodeActionHandler
     description-bundle-id: desc.decode-hex
   - logo: ./logos/sha1.png
     keywords:
       - sha1
-    handler-class-name: top.myrest.myflow.developer.Sha1DigestActionHandler
+    handler: top.myrest.myflow.developer.Sha1DigestActionHandler
     description-bundle-id: desc.sha1
   - logo: ./logos/sha256.png
     keywords:
       - sha256
-    handler-class-name: top.myrest.myflow.developer.Sha256DigestActionHandler
+    handler: top.myrest.myflow.developer.Sha256DigestActionHandler
     description-bundle-id: desc.sha256
   - logo: ./logos/md5.png
     keywords:
       - md5
-    handler-class-name: top.myrest.myflow.developer.Md5DigestActionHandler
+    handler: top.myrest.myflow.developer.Md5DigestActionHandler
     description-bundle-id: desc.md5
   - logo: ./logos/uuid.png
     keywords:
       - uuid
-    handler-class-name: top.myrest.myflow.developer.UuidGeneratorActionHandler
+    handler: top.myrest.myflow.developer.UuidGeneratorActionHandler
     description-bundle-id: desc.uuid
   - logo: ./logos/uuid.png
     keywords:
       - uuid0
-    handler-class-name: top.myrest.myflow.developer.Uuid0GeneratorActionHandler
+    handler: top.myrest.myflow.developer.Uuid0GeneratorActionHandler
     description-bundle-id: desc.simple-uuid
   - logo: ./logos/regex.png
     keywords:
       - regex
-    handler-class-name: top.myrest.myflow.developer.RegexMatchActionHandler
+    handler: top.myrest.myflow.developer.RegexMatchActionHandler
     description-bundle-id: desc.regex
   - logo: ./logos/lowercase.png
     keywords:
       - lower
-    handler-class-name: top.myrest.myflow.developer.LowerCaseActionHandler
+    handler: top.myrest.myflow.developer.LowerCaseActionHandler
     description-bundle-id: desc.lower-case
   - logo: ./logos/uppercase.png
     keywords:
       - upper
-    handler-class-name: top.myrest.myflow.developer.UpperCaseActionHandler
+    handler: top.myrest.myflow.developer.UpperCaseActionHandler
     description-bundle-id: desc.upper-case
