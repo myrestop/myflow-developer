@@ -9,7 +9,6 @@ logo: ./logos/developer.png
 compatible-version:
   since-build: 0
   until-build: 2147483647
-description-filename: description.md
 owner:
   name: myrest
   email: myflow@myrest.top
@@ -22,10 +21,6 @@ platforms:
   - WINDOWS
   - MACOS
   - LINUX
-languages:
-  - EN_US
-  - ZH_CN
-  - ZH_TW
 actions:
   - logo: ./logos/code_naming.png
     keywords:
