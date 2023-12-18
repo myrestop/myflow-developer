@@ -2,7 +2,6 @@ id: top.myrest.myflow.developer
 name: Developer Tools
 names:
   ZH_CN: 开发者工具集
-  ZH_TW: 開發者工具集
 entry: ./myflow-developer.jar
 version: 1.0.0
 logo: ./logos/developer.png
@@ -11,7 +10,7 @@ compatible-version:
   until-build: 2147483647
 owner:
   name: myrest
-  email: myflow@myrest.top
+  email: mrpan@myrest.top
   homepage: https://myrest.top/myflow
 categories:
   - PRODUCTIVITY
