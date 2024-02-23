@@ -4,7 +4,7 @@ This is a plugin for developers that provides many commonly used functions, incl
 
 If you have other features, or encounter any problems, welcome to submit a feedback.
 
-##### Color Parser
+### Color Parser
 
 Supports 6-digit and 8-digit hexadecimal lengths, example `0xAABBCC` `0xEE778899`. The `0x` prefix can be omitted.
 
