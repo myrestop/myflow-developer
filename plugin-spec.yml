@@ -6,8 +6,8 @@ entry: ./myflow-developer.jar
 version: 1.0.0
 logo: ./logos/developer.png
 compatible-version:
-  since-build: 0
-  until-build: 2147483647
+  since-build: 1
+  until-build: 362
 owner:
   name: myrest
   email: mrpan@myrest.top

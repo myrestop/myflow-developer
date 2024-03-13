@@ -5,7 +5,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.8.20"
-    id("org.jetbrains.compose") version "1.4.0"
+    id("org.jetbrains.compose") version "1.5.12"
 }
 
 group = "top.myrest"
@@ -19,7 +19,7 @@ repositories {
     google()
 }
 
-val myflowVersion = "1.0.0"
+val myflowVersion = "1.0.6"
 
 dependencies {
     compileOnly(compose.desktop.currentOs)
