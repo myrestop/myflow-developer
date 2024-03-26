@@ -3,3 +3,4 @@ color-parser: Color Parser
 to: To
 lower-case: Convert To Lower Case
 upper-case: Convert To Upper Case
+next-exe-time: Next Execution Time

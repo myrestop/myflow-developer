@@ -26,6 +26,7 @@ var jetbrainsComposeDependency: Dependency? = null
 dependencies {
     jetbrainsComposeDependency = implementation(compose.desktop.currentOs)
     myflowDependency = implementation("top.myrest:myflow-kit:$myflowVersion")
+    implementation("com.cronutils:cron-utils:9.2.1")
     testImplementation("top.myrest:myflow-baseimpl:$myflowVersion")
 }
 

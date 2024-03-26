@@ -8,5 +8,6 @@ fun main() {
     enableDevEnv()
     DevProps.disableNativeListener = false
     FlowApp().configApp()
+    AppInfo.runtimeProps.pinActionWindowOnStartupShow = true
     App(AppInfo.APP_NAME + "Developer")
 }

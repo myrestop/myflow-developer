@@ -31,6 +31,11 @@ actions:
     logo: ./logos/color.png
     handler: top.myrest.myflow.developer.ColorActionHandler
     name-bundle-id: color-parser
+  - logo: ./logos/timer.svg
+    keywords:
+      - '*'
+    handler: top.myrest.myflow.developer.CronParserActionHandler
+    name-bundle-id: Cron
   - logo: ./logos/base32.png
     keywords:
       - base32

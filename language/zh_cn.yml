@@ -3,3 +3,4 @@ color-parser: 颜色解析器
 to: 转
 lower-case: 转小写字母
 upper-case: 转大写字母
+next-exe-time: 下次执行时间
