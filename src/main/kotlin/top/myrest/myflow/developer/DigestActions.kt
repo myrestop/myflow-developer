@@ -11,6 +11,7 @@ import top.myrest.myflow.action.BaseDigestActionHandler
 import top.myrest.myflow.action.asSaveFileResult
 import top.myrest.myflow.action.asSuggestionResult
 import top.myrest.myflow.action.basicCopyResult
+import top.myrest.myflow.util.FileUtils
 
 class Base32DigestActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "base32", logo = "./logos/base32.png", result = Base32.encode(content))
@@ -19,7 +20,7 @@ class Base32DigestActionHandler : BaseDigestActionHandler() {
 
 class Base32DecodeActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "base32.decode", logo = "./logos/base32.png", result = Base32.decodeStr(content).asSuggestionResult())
-    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "base32.decode", logo = "./logos/base32.png", result = Base32.decodeStr(FileUtil.readUtf8String(file)).asSaveFileResult())
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "base32.decode", logo = "./logos/base32.png", result = Base32.decodeStr(FileUtils.readByFileCharset(file)).asSaveFileResult())
 }
 
 class Base64DigestActionHandler : BaseDigestActionHandler() {
@@ -34,17 +35,17 @@ class Base64UrlDigestActionHandler : BaseDigestActionHandler() {
 
 class Base64DecodeActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "base64.decode", logo = "./logos/base64.png", result = Base64.decodeStr(content).asSuggestionResult())
-    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "base64.decode", logo = "./logos/base64.png", result = Base64.decodeStr(FileUtil.readUtf8String(file)).asSaveFileResult())
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "base64.decode", logo = "./logos/base64.png", result = Base64.decodeStr(FileUtils.readByFileCharset(file)).asSaveFileResult())
 }
 
 class String2UnicodeActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "string2unicode", logo = "./logos/unicode.png", result = UnicodeUtil.toUnicode(content))
-    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "string2unicode", logo = "./logos/unicode.png", result = UnicodeUtil.toUnicode(FileUtil.readUtf8String(file)).asSaveFileResult())
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "string2unicode", logo = "./logos/unicode.png", result = UnicodeUtil.toUnicode(FileUtils.readByFileCharset(file)).asSaveFileResult())
 }
 
 class Unicode2StringActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "unicode2string", logo = "./logos/unicode.png", result = UnicodeUtil.toString(content).asSuggestionResult())
-    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "unicode2string", logo = "./logos/unicode.png", result = UnicodeUtil.toString(FileUtil.readUtf8String(file)).asSaveFileResult())
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "unicode2string", logo = "./logos/unicode.png", result = UnicodeUtil.toString(FileUtils.readByFileCharset(file)).asSaveFileResult())
 }
 
 class HexDigestActionHandler : BaseDigestActionHandler() {
@@ -54,17 +55,17 @@ class HexDigestActionHandler : BaseDigestActionHandler() {
 
 class HexDecodeActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "hex.decode", logo = "./logos/hex.png", result = HexUtil.decodeHexStr(content).asSuggestionResult())
-    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "hex.decode", logo = "./logos/hex.png", result = HexUtil.decodeHexStr(FileUtil.readUtf8String(file)).asSaveFileResult())
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "hex.decode", logo = "./logos/hex.png", result = HexUtil.decodeHexStr(FileUtils.readByFileCharset(file)).asSaveFileResult())
 }
 
 class LowerCaseActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "lowercase", logo = "./logos/lowercase.png", result = content.lowercase().asSuggestionResult())
-    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "lowercase", logo = "./logos/lowercase.png", result = FileUtil.readUtf8String(file).lowercase().asSaveFileResult())
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "lowercase", logo = "./logos/lowercase.png", result = FileUtils.readByFileCharset(file).lowercase().asSaveFileResult())
 }
 
 class UpperCaseActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "uppercase", logo = "./logos/uppercase.png", result = content.uppercase().asSuggestionResult())
-    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "uppercase", logo = "./logos/uppercase.png", result = FileUtil.readUtf8String(file).uppercase().asSaveFileResult())
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "uppercase", logo = "./logos/uppercase.png", result = FileUtils.readByFileCharset(file).uppercase().asSaveFileResult())
 }
 
 class Sha1DigestActionHandler : BaseDigestActionHandler() {

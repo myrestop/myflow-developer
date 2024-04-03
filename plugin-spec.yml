@@ -3,12 +3,12 @@ name: Developer Tools
 names:
   ZH_CN: 开发者工具集
 entry: ./myflow-developer.jar
-version: 1.0.1
+version: 1.0.2
 logo: ./logos/developer.png
 source-code: https://github.com/myrestop/myflow-developer
 compatible-version:
-  since-build: 477
-  until-build: 477
+  since-build: 612
+  until-build: 612
 owner:
   name: myrest
   email: mrpan@myrest.top
