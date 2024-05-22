@@ -3,7 +3,7 @@ name: Developer Tools
 names:
   ZH_CN: 开发者工具集
 entry: ./myflow-developer.jar
-version: 1.0.3
+version: 1.0.4
 logo: ./logos/developer.png
 source-code: https://github.com/myrestop/myflow-developer
 compatible-version:
@@ -122,3 +122,13 @@ actions:
       - upper
     handler: top.myrest.myflow.developer.UpperCaseActionHandler
     name-bundle-id: upper-case
+  - logo: ./logos/http.png
+    keywords:
+      - encodeurl
+    handler: top.myrest.myflow.developer.UrlEncodeActionHandler
+    name-bundle-id: Encode URL
+  - logo: ./logos/http.png
+    keywords:
+      - decodeurl
+    handler: top.myrest.myflow.developer.UrlDecodeActionHandler
+    name-bundle-id: Decode URL

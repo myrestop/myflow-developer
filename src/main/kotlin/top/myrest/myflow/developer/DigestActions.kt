@@ -4,6 +4,8 @@ import java.io.File
 import cn.hutool.core.codec.Base32
 import cn.hutool.core.codec.Base64
 import cn.hutool.core.io.FileUtil
+import cn.hutool.core.net.URLDecoder
+import cn.hutool.core.net.URLEncodeUtil
 import cn.hutool.core.text.UnicodeUtil
 import cn.hutool.core.util.HexUtil
 import cn.hutool.crypto.SecureUtil
@@ -81,4 +83,14 @@ class Sha256DigestActionHandler : BaseDigestActionHandler() {
 class Md5DigestActionHandler : BaseDigestActionHandler() {
     override fun queryDigestAction(content: String) = basicCopyResult(actionId = "md5", logo = "./logos/md5.png", result = SecureUtil.md5(content))
     override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "md5", logo = "./logos/md5.png", result = SecureUtil.md5(file))
+}
+
+class UrlEncodeActionHandler : BaseDigestActionHandler() {
+    override fun queryDigestAction(content: String) = basicCopyResult(actionId = "url.encode", logo = "./logos/http.png", result = URLEncodeUtil.encodeAll(content))
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "url.encode", logo = "./logos/http.png", result = URLEncodeUtil.encodeAll(FileUtils.readByFileCharset(file)).asSaveFileResult())
+}
+
+class UrlDecodeActionHandler : BaseDigestActionHandler() {
+    override fun queryDigestAction(content: String) = basicCopyResult(actionId = "url.decode", logo = "./logos/http.png", result = URLDecoder.decode(content, Charsets.UTF_8))
+    override fun queryFileDigestAction(file: File) = basicCopyResult(actionId = "url.decode", logo = "./logos/http.png", result = URLDecoder.decode(FileUtils.readByFileCharset(file), Charsets.UTF_8).asSaveFileResult())
 }
